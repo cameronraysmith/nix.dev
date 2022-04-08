@@ -18,6 +18,7 @@ let
     poetrylock = ./poetry.lock;
     editablePackageSources = {};
   };
+
 in
 
 pkgs.mkShell {
@@ -27,4 +28,9 @@ pkgs.mkShell {
     pkgs.poetry
 	  ];
 
+  shellHook = ''
+    function command_not_found_handle(){
+      echo "$1 not found";
+    }
+  '';
 }

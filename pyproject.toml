@@ -6,10 +6,11 @@ authors = ["Domen Kožar <domen@dev.si>"]
 license = "CC BY-SA"
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.9"
 
 livereload = "*"
 myst-parser = {version = "*", extras = ["linkify"]}
+pexpect = "*"
 sphinx = "*"
 sphinx-book-theme = "*"
 sphinx-copybutton = "*"
